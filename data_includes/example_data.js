@@ -10,12 +10,7 @@ var defaults = [
     "DashedSentence", {
         mode: "self-paced reading",
     },
-    "AcceptabilityJudgment", {
-        as: ["1", "2", "3", "4", "5", "6", "7"],
-        presentAsScale: true,
-        instructions: "Use number keys or click boxes to answer.",
-        leftComment: "(Bad)", rightComment: "(Good)"
-    },
+    
     "Question", {
         hasCorrect: true
     },
@@ -86,8 +81,6 @@ var items = [
 
     // The first question will be chosen if the first sentence from the previous two items is chosen;
     // the second question will be chosen if the second sentence from the previous pair of items is chosen.
-    [["q1",[100,1]], "AcceptabilityJudgment", {s: "Which actress did the journalist interview after meeting her PA on a previous occasion?"}],
-    [["q2",[100,1]], "AcceptabilityJudgment", {s: "Which actress did the journalist interview her husband after meeting on a previous occasion?"}],
 
     [["s1",2], "DashedSentence", {s: "The teacher helped struggling students who he encouraged to succeed without treating like idiots."},
                "Question",       {q: "What did the teacher do?",
@@ -99,8 +92,7 @@ var items = [
                                                                       "Encourage his best students to succeed",
                                                                       "Treat struggling students like idiots"]}],
 
-    [["q1",[200,2]], "AcceptabilityJudgment", {s: {html: "<b>Which struggling students</b> did the teacher encourage to succeed without treating their friends like idiots?"}}],
-    [["q2",[200,2]], "AcceptabilityJudgment", {s: {html: "<b>Which struggling students</b> did the teacher encourage their friends to succeed without treating like idiots?"}}],
+   
 
     //
     // 10 self-paced-reading filler sentences.
