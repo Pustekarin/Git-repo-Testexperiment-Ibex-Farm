@@ -3,9 +3,9 @@ var practiceItemTypes = ["practice"];
 
 var defaults = [
     "Separator", {
-        transfer: keypress,
-        normalMessage: "Press any key to continue.",
-        errorMessage: "Wrong. Press any key to continue."
+        transfer: "keypress",
+        normalMessage: "Press space bar to continue.",
+        errorMessage: "Wrong. Press space bar to continue."
     },
     "DashedSentence", {
         mode: "self-paced reading",
