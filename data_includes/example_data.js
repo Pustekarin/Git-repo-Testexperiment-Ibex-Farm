@@ -3,9 +3,9 @@ var practiceItemTypes = ["practice"];
 
 var defaults = [
     "Separator", {
-        transfer: 1000,
-        normalMessage: "Please wait for the next sentence.",
-        errorMessage: "Wrong. Please wait for the next sentence."
+        transfer: keypress,
+        normalMessage: "Press any key to continue.",
+        errorMessage: "Wrong. Press any key to continue."
     },
     "DashedSentence", {
         mode: "self-paced reading",
@@ -154,3 +154,4 @@ var items = [
                                   "The patient still has severe pain in his right leg",
                                   "The patient no longer suffers from pain in his left leg"]}]
 ];
+
