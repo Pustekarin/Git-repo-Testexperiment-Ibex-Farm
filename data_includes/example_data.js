@@ -15,7 +15,7 @@ var defaults  = [
         hasCorrect: true 
     },
     "Message ", {
-        hideProgressBar: true 
+        hideProgressBar: false 
     },
     "Form ", {
         hideProgressBar: false,
