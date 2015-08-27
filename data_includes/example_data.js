@@ -1,7 +1,7 @@
-var shuffleSequence = seq("intro", sepWith("sep", seq("practice", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
+var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
 var practiceItemTypes = ["practice"];
 
-var defaults = [
+var defaults  = [
     "Separator", {
         transfer: "keypress",
         normalMessage: "Press space bar to continue.",
@@ -12,19 +12,19 @@ var defaults = [
     },
     
     "Question", {
-        hasCorrect: true
+        hasCorrect: true 
     },
-    "Message", {
-        hideProgressBar: true
+    "Message ", {
+        hideProgressBar: true 
     },
-    "Form", {
+    "Form ", {
         hideProgressBar: true,
-        continueOnReturn: true,
+        continueOnReturn: true ,
         saveReactionTime: true
     }
 ];
 
-var items = [
+var items  = [
 
     // New in Ibex 0.3-beta-9. You can now add a '__SendResults__' controller in your shuffle
     // sequence to send results before the experiment has finished. This is NOT intended to allow
@@ -47,11 +47,18 @@ var items = [
     //
     //["setcounter", "__SetCounter__", { }],
 
-    // NOTE: You could also use the 'Message' controller for the experiment intro (this provides a simple
+    //  NOTE: You could also use the 'Message' controller for the experiment intro (this provides a simple
     // consent checkbox).
 
     ["intro", "Form", {
         html: { include: "example_intro.html" },
+        validators: {
+            age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
+        }
+    } ],
+
+    ["demographics", "Form", {
+        html: { include: "demographics.html" },
         validators: {
             age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
@@ -62,7 +69,7 @@ var items = [
     //
     ["practice", "DashedSentence", {s: "This is a practice sentence to get you used to reading sentences like this."}],
     ["practice", "DashedSentence", {s: "This is another practice sentence with a practice question following it."},
-                 "Question", {hasCorrect: false, randomOrder: false,
+                 "Question", {hasCorrect: false , randomOrder: false,
                               q: "How would you like to answer this question?",
                               as: ["Press 1 or click here for this answer.",
                                    "Press 2 or click here for this answer.",
@@ -146,3 +153,4 @@ var items = [
                                   "The patient still has severe pain in his right leg",
                                   "The patient no longer suffers from pain in his left leg"]}]
 ];
+
