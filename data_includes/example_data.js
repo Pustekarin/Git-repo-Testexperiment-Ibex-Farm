@@ -9,7 +9,7 @@ var defaults = [
     },
     "DashedSentence", {
         mode: "self-paced reading",
-    
+    },
     "Question", {
         hasCorrect: true
     },
@@ -143,8 +143,3 @@ var items = [
                                   "The patient still has severe pain in his right leg",
                                   "The patient no longer suffers from pain in his left leg"]}]
 ];
-
-
-
-
-
