@@ -18,7 +18,7 @@ var defaults  = [
         hideProgressBar: true 
     },
     "Form ", {
-        hideProgressBar: true,
+        hideProgressBar: false,
         continueOnReturn: true ,
         saveReactionTime: true
     }
