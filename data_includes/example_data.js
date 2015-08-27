@@ -1,4 +1,4 @@
-var shuffleSequence = seq(/*"intro",/* sepWith("sep", seq("practice", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
+var shuffleSequence = seq(/*"intro",*/ sepWith("sep", seq("practice", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
 var practiceItemTypes = ["practice"];
 
 var defaults = [
@@ -10,6 +10,7 @@ var defaults = [
     "DashedSentence", {
         mode: "self-paced reading",
     },
+    
     "Question", {
         hasCorrect: true
     },
@@ -90,6 +91,8 @@ var items = [
                "Question",       {q: "What did the teacher do?", as: ["Encourage struggling students to succeed",
                                                                       "Encourage his best students to succeed",
                                                                       "Treat struggling students like idiots"]}],
+
+   
 
     //
     // 10 self-paced-reading filler sentences.
