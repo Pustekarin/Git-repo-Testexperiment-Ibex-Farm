@@ -1,4 +1,4 @@
-var shuffleSequence = seq(/*"intro",*/ sepWith("sep", seq("practice", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
+var shuffleSequence = seq("intro", sepWith("sep", seq("practice", rshuffle("s1", "s2"))), sepWith("sep", rshuffle("q1", "q2")));
 var practiceItemTypes = ["practice"];
 
 var defaults = [
@@ -9,7 +9,6 @@ var defaults = [
     },
     "DashedSentence", {
         mode: "self-paced reading",
-    },
     
     "Question", {
         hasCorrect: true
@@ -57,7 +56,6 @@ var items = [
         }
     } ],
 
-    //
     // Three practice items for self-paced reading (one with a comprehension question).
     //
     ["practice", "DashedSentence", {s: "This is a practice sentence to get you used to reading sentences like this."}],
@@ -91,8 +89,6 @@ var items = [
                "Question",       {q: "What did the teacher do?", as: ["Encourage struggling students to succeed",
                                                                       "Encourage his best students to succeed",
                                                                       "Treat struggling students like idiots"]}],
-
-   
 
     //
     // 10 self-paced-reading filler sentences.
@@ -146,4 +142,8 @@ var items = [
                                   "The patient still has severe pain in his right leg",
                                   "The patient no longer suffers from pain in his left leg"]}]
 ];
+
+
+
+
 
