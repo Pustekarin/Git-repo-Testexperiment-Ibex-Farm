@@ -56,6 +56,7 @@ var items = [
         }
     } ],
 
+    //
     // Three practice items for self-paced reading (one with a comprehension question).
     //
     ["practice", "DashedSentence", {s: "This is a practice sentence to get you used to reading sentences like this."}],
