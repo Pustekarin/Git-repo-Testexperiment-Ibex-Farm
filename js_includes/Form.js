@@ -123,7 +123,7 @@ jqueryWidget: {
                     if (oblig && (! oneIsSelected)) {
 							console.log(rgs[k][0].attr('name'));
 							console.log($('#nativelanguagesradio').is(':selected'));
-						if (rgs[k][0].attr('name')=='nativelanguages' && !$('#nativelanguagesradio').is(':selected')) {
+						if (rgs[k][0].attr('name')=='nativelanguages') && !$('#nativelanguagesradio').is(':selected')) {
 						} else {
 							alertOrAddError(rgs[k][0].attr('name'), t.obligatoryRadioErrorGenerator(rgs[k][0].attr('name')));
 							return;
