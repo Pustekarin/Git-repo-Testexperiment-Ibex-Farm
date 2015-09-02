@@ -113,7 +113,8 @@ jqueryWidget: {
                     var oneThatWasSelected;
                     var val;
                     for (var i = 0; i < rgs[k].length; ++i) {
-						alert(rgs[k][i].value);
+							alertOrAddError(rgs[k][i].value, rgs[k][i].value);
+//						alert(rgs[k][i].value);
                         if (rgs[k][i].hasClass('obligatory')) oblig = true;
                         if (rgs[k][i].attr('checked')) {
                             oneIsSelected = true;
