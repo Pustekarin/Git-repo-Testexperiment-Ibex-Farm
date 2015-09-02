@@ -65,11 +65,18 @@ jqueryWidget: {
 					alert(inps[i].name);
                     var inp = $(inps[i]);
 
-                    if (inp.hasClass("obligatory") && ((! inp.attr('value')) || inp.attr('value').match(/^\s*$/))) {
-                        alertOrAddError(inp.attr('name'), t.obligatoryErrorGenerator(inp.attr('name')));
-                        return;
-                    }
-
+					if (inps[i].name=='nativelanguages' 
+						&& ($('#nativelanguagesradio').is(':checked') || $('#nativelanguagesradio').is(':selected'))) {
+						if (inp.hasClass("obligatory") && ((! inp.attr('value')) || inp.attr('value').match(/^\s*$/))) {
+							alertOrAddError(inp.attr('name'), t.obligatoryErrorGenerator(inp.attr('name')));
+							return;
+						}
+					} else {	
+						if (inp.hasClass("obligatory") && ((! inp.attr('value')) || inp.attr('value').match(/^\s*$/))) {
+							alertOrAddError(inp.attr('name'), t.obligatoryErrorGenerator(inp.attr('name')));
+							return;
+						}
+					}
                     if (t.validators[inp.attr('name')]) {
                         var er = t.validators[inp.attr('name')](inp.attr('value'));
                         if (typeof(er) == "string") {
