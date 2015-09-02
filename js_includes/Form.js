@@ -68,9 +68,11 @@ jqueryWidget: {
 					if (inps[i].name=='nativelanguages') { 
 						if ($('#nativelanguagesradio').is(':checked') 
 								|| $('#nativelanguagesradio').is(':selected')) {
-						if (inp.hasClass("obligatory") && ((! inp.attr('value')) || inp.attr('value').match(/^\s*$/))) {
-							alertOrAddError(inp.attr('name'), t.obligatoryErrorGenerator(inp.attr('name')));
-							return;
+							if (inp.hasClass("obligatory") && 
+								((! inp.attr('value')) || inp.attr('value').match(/^\s*$/))) {
+								alertOrAddError(inp.attr('name'), t.obligatoryErrorGenerator(inp.attr('name')));
+								return;
+							}
 						}
 					} else {	
 						if (inp.hasClass("obligatory") && ((! inp.attr('value')) || inp.attr('value').match(/^\s*$/))) {
