@@ -62,7 +62,7 @@ jqueryWidget: {
                 for (var i = 0; i < tas.length; ++i) { inps.push(tas[i]); }
 
                 for (var i = 0; i < inps.length; ++i) {
-					alert(inps[i].name);
+					
                     var inp = $(inps[i]);
 
 					if (inps[i].name=='nativelanguages') { 
