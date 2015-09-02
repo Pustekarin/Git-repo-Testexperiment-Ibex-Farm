@@ -113,6 +113,7 @@ jqueryWidget: {
                     var oneThatWasSelected;
                     var val;
                     for (var i = 0; i < rgs[k].length; ++i) {
+						alert(rgs[k][i].value);
                         if (rgs[k][i].hasClass('obligatory')) oblig = true;
                         if (rgs[k][i].attr('checked')) {
                             oneIsSelected = true;
@@ -123,7 +124,8 @@ jqueryWidget: {
                     if (oblig && (! oneIsSelected)) {
 							console.log(rgs[k][0].attr('name'));
 							console.log($('#nativelanguagesradio').is(':selected'));
-						if (rgs[k][0].attr('name')=='nativelanguages' && !$('#nativelanguagesradio').is(':selected')) {
+							
+						if (rgs[k][0].attr('name')=='nativelanguages' && !$('#nativelanguagesradio').is(':checked')) {
 						} else {
 							alertOrAddError(rgs[k][0].attr('name'), t.obligatoryRadioErrorGenerator(rgs[k][0].attr('name')));
 							return;
