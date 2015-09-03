@@ -98,6 +98,46 @@ var items  = [
                "Question",       {q: "What did the teacher do?", as: ["Encourage struggling students to succeed",
                                                                       "Encourage his best students to succeed",
                                                                       "Treat struggling students like idiots"]}],
+																	  
+	[["s1",3], "DashedSentence", {s: "The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion."},
+               "Question",       {q: "The actress was:", as: ["shy", "publicity-seeking", "impatient"]}],
+    [["s2",3], "DashedSentence", {s: "The journalist interviewed an actress who after meeting on a previous occasion he knew to be shy of publicity."},
+               "Question",       {q: "The actress was:", as: ["shy", "publicity-seeking", "impatient"]}],
+
+    [["s1",4], "DashedSentence", {s: "The teacher helped struggling students who he encouraged to succeed without treating like idiots."},
+               "Question",       {q: "What did the teacher do?",
+                                  as: ["Encourage struggling students to succeed",
+                                       "Encourage his best students to succeed",
+                                       "Treat struffling students like idiots"]}],
+    [["s2",4], "DashedSentence", {s: "The teacher helped struggling students who without treating like idiots he encouraged to succeed."},
+               "Question",       {q: "What did the teacher do?", as: ["Encourage struggling students to succeed",
+                                                                      "Encourage his best students to succeed",
+                                                                      "Treat struggling students like idiots"]}],
+																	  
+	[["s1",5], "DashedSentence", {s: "The teacher helped struggling students who he encouraged to succeed without treating like idiots."},
+               "Question",       {q: "What did the teacher do?",
+                                  as: ["Encourage struggling students to succeed",
+                                       "Encourage his best students to succeed",
+                                       "Treat struffling students like idiots"]}],
+    [["s2",5], "DashedSentence", {s: "The teacher helped struggling students who without treating like idiots he encouraged to succeed."},
+               "Question",       {q: "What did the teacher do?", as: ["Encourage struggling students to succeed",
+                                                                      "Encourage his best students to succeed",
+                                                                      "Treat struggling students like idiots"]}],
+																	  
+	[["s1",6], "DashedSentence", {s: "The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion."},
+               "Question",       {q: "The actress was:", as: ["shy", "publicity-seeking", "impatient"]}],
+    [["s2",6], "DashedSentence", {s: "The journalist interviewed an actress who after meeting on a previous occasion he knew to be shy of publicity."},
+               "Question",       {q: "The actress was:", as: ["shy", "publicity-seeking", "impatient"]}],
+
+    [["s1",7], "DashedSentence", {s: "The teacher helped struggling students who he encouraged to succeed without treating like idiots."},
+               "Question",       {q: "What did the teacher do?",
+                                  as: ["Encourage struggling students to succeed",
+                                       "Encourage his best students to succeed",
+                                       "Treat struffling students like idiots"]}],
+    [["s2",7], "DashedSentence", {s: "The teacher helped struggling students who without treating like idiots he encouraged to succeed."},
+               "Question",       {q: "What did the teacher do?", as: ["Encourage struggling students to succeed",
+                                                                      "Encourage his best students to succeed",
+                                                                      "Treat struggling students like idiots"]}],
 
    
 
