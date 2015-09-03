@@ -1,4 +1,4 @@
-var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", rshuffle("s1", "s2", "f")))), sepWith("sep", rshuffle("q1", "q2")));
+var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", rshuffle("s1", "s2")))), sepWith("sep", rshuffle("q1", "q2")));
 var practiceItemTypes = ["practice"];
 
 var defaults  = [
