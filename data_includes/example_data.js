@@ -81,10 +81,10 @@ var items  = [
     // There are two conditions.
     //
 
-    [["s1",1], "DashedSentence", {s: "The journalist interviewed an actress who he knew to be shy of publicity after meeting on a previous occasion."},
-               "Question",       {q: "The actress was:", as: ["shy", "publicity-seeking", "impatient"]}],
-    [["s2",1], "DashedSentence", {s: "The journalist interviewed an actress who after meeting on a previous occasion he knew to be shy of publicity."},
-               "Question",       {q: "The actress was:", as: ["shy", "publicity-seeking", "impatient"]}],
+    [["s1",1], "DashedSentence", {s: "Item 1, condition 1"},
+               "Question",       {q: "Question item 1", as: ["answer 1 to item 1", "answer 2 to item 1", "answer 3 to item 1"]}],
+    [["s2",1], "DashedSentence", {s: "Item 1, condition 2"},
+               "Question",       {q: "Question item 1", as: ["answer 1 to item 1", "answer 2 to item 1", "answer 3 to item 1"]}],
 
     // The first question will be chosen if the first sentence from the previous two items is chosen;
     // the second question will be chosen if the second sentence from the previous pair of items is chosen.
@@ -145,52 +145,52 @@ var items  = [
     // 10 self-paced-reading filler sentences.
     //
 
-    ["f", "DashedSentence", {s: "The foreign spy that encoded the top-secret messages was given a new mission that required going to Japan."},
-          "Question",       {q: "The spy's mission required him to:", as: ["Go to Japan", "Destroy top-secret messages", "Bug a hotel room"]}],
+    ["f", "DashedSentence", {s: "This is filler sentence 1."},
+          "Question",       {q: "Question filler 1:", as: ["answer 1 to filler question 1", "answer 2 to filler question 1", "answer 3 to filler question 1"]}],
 
-    ["f", "DashedSentence", {s: "The receptionist that the real estate company just hired immediately familiarized herself with all the phone numbers of their clients."},
-          "Question",       {q: "The receptionist familiarized herself with:",
-                             as: ["Some phone numbers",
-                                  "The health and safety regulations",
-                                  "Her boss"]}],
+    ["f", "DashedSentence", {s: "This is filler sentence 2."},
+          "Question",       {q: "Question filler 2:",
+                             as: ["answer 1 to filler question 2",
+                                  "answer 2 to filler question 2",
+                                  "answer 3 to filler question 2"]}],
 
-    ["f", "DashedSentence", {s: "Only two specialized surgeons that work in the hospital could do this operation."},
-          "Question",       {q: "The operation can be performed by:",
-                             as: ["Two surgeons with specialist training",
-                                  "All the surgeons at the hospital",
-                                  "Three surgeons who are currently off sick"]}],
+    ["f", "DashedSentence", {s: "This is filler sentence 3."},
+          "Question",       {q: "Question filler 3:",
+                             as: ["answer 1 to filler question 3",
+                                  "answer 2 to filler question 3",
+                                  "answer 3 to filler question 3"]}],
 
-    ["f", "DashedSentence", {s: "The gangsters that the local police officers tracked for years were represented by an inexperienced lawyer."},
-          "Question",       {q: "Who did the inexperienced lawyer represent?",
-                             as: ["Some gangsters", "Some local police officers", "A murder suspect"]}],
+    ["f", "DashedSentence", {s: "This is filler sentence 4."},
+          "Question",       {q: "Question filler 4",
+                             as: ["answer 1 to filler question 4", "answer 2 to filler question 4", "answer 3 to filler question 4"]}],
 
-    ["f", "DashedSentence", {s: "The woman that John had seen in the subway bought herself a pair of stunning shoes that cost a fortune."},
-          "Question",       {q: "Where did John see the woman?", as: ["In the subway", "On the bus", "In the shoe shop"]}],
+    ["f", "DashedSentence", {s: "This is filler sentence 5."},
+          "Question",       {q: "Question filler 5", as: ["answer 1 to filler question 5", "answer 2 to filler question 5", "answer 3 to filler question 5"]}],
 
-    ["f", "DashedSentence", {s: "If the award-winning chef had entered this competition, he surely would have won first prize."},
-          "Question",       {q: "Why didn't the chef win the competition?",
-                             as: ["Because he didn't enter it",
-                                  "Because his food wasn't good enough.",
-                                  "Because he was kicked out for cheating."]}],
+    ["f", "DashedSentence", {s: "This is filler sentence 6."},
+          "Question",       {q: "Question filler 6",
+                             as: ["answer 1 to filler question 6",
+                                  "answer 2 to filler question 6,
+                                  "answer 3 to filler question 6"]}],
 
-    ["f", "DashedSentence", {s: "If the organized secretary had filed the documents when she first received them, they would have been easy to find."},
-          "Question",       {q: "Why were the documents difficult to find?",
-                             as: ["Because the secretary hadn't filed them properly",
-                                  "Because a manager at the company had lost them",
-                                  "Because they had been stolen."]}],
+    ["f", "DashedSentence", {s: "This is filler sentence 7."},
+          "Question",       {q: "Question filler 7",
+                             as: ["answer 1 to filler question 7",
+                                  "answer 2 to filler question 7",
+                                  "answer 3 to filler question 7"]}],
 
-    ["f", "DashedSentence", {s: "If the homemade beer had been left to ferment more, it would have been drinkable."},
-          "Question",       {q: "Why wasn't the homemade beer drinkable?",
-                             as: ["It hadn't been left to ferment long enough",
-                                  "It had been left to ferment too long",
-                                  "The ingredients had been measured incorrectly."]}],
+    ["f", "DashedSentence", {s: "This is filler sentence 8."},
+          "Question",       {q: "Question filler 8",
+                             as: ["answer 1 to filler question 8",
+                                  "answer 2 to filler question 8",
+                                  "answer 3 to filler question 8"]}],
 
-    ["f", "DashedSentence", {s: "The cowboy that the bulls tried to trample injured himself getting off a horse."}],
+    ["f", "DashedSentence", {s: "This is filler sentence 9 and apparently it has no question."}],
 
-    ["f", "DashedSentence", {s: "The patient that was admitted to the hospital last month still suffers severe pain in his left leg."},
-          "Question",       {q: "Which of the following is true?",
-                             as: ["The patient still has severe pain in his left leg",
-                                  "The patient still has severe pain in his right leg",
-                                  "The patient no longer suffers from pain in his left leg"]}]
+    ["f", "DashedSentence", {s: "This is filler sentence 10."},
+          "Question",       {q: "Question filler 10",
+                             as: ["answer 1 to filler question 10",
+                                  "answer 2 to filler question 10",
+                                  "answer 3 to filler question 10"]}]
 ];
 
