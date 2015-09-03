@@ -65,7 +65,7 @@ jqueryWidget: {
 					
                     var inp = $(inps[i]);
 
-					if (inps[i].name=='native languages') { 
+					if (inps[i].name=='please specify') { 
 						if ($('#nativelanguagesradio').is(':checked') 
 								|| $('#nativelanguagesradio').is(':selected')) {
 							if (inp.hasClass("obligatory") && 
