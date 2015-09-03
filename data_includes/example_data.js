@@ -170,7 +170,7 @@ var items  = [
     ["f", "DashedSentence", {s: "This is filler sentence 6."},
           "Question",       {q: "Question filler 6",
                              as: ["answer 1 to filler question 6",
-                                  "answer 2 to filler question 6,
+                                  "answer 2 to filler question 6",
                                   "answer 3 to filler question 6"]}],
 
     ["f", "DashedSentence", {s: "This is filler sentence 7."},
