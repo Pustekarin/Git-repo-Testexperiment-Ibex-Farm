@@ -220,7 +220,7 @@ var items  = [
                              as: ["answer 1 to filler question 10",
                                   "answer 2 to filler question 10",
                                   "answer 3 to filler question 10"]}]
-];
+],
 
 ["sr", "__SendResults__", { }],
 
@@ -229,5 +229,5 @@ var items  = [
         validators: {
             age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
-    } ],
+    } ];
 
