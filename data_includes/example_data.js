@@ -1,4 +1,4 @@
-var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", rshuffle("s1", "s2", "f"))), sepWith("sep", rshuffle("q1", "q2")), "end");
+var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", rshuffle("s1", "s2", "f"))), sepWith("sep", rshuffle("q1", "q2")), "sr", "end");
 var practiceItemTypes = ["practice"];
 
 var defaults  = [
@@ -21,6 +21,9 @@ var defaults  = [
         hideProgressBar: false,
         continueOnReturn: true ,
         saveReactionTime: true
+    }
+	"sr ", {
+        manualSendResults: true
     }
 ];
 
@@ -218,6 +221,8 @@ var items  = [
                                   "answer 2 to filler question 10",
                                   "answer 3 to filler question 10"]}]
 ];
+
+["sr", "__SendResults__", { }],
 
 ["end", "Form", {
         html: { include: "end.html" },
