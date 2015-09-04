@@ -22,7 +22,7 @@ var defaults  = [
         continueOnReturn: true ,
         saveReactionTime: true
     }
-	"sr ", {
+	"__SendResults__", {
         manualSendResults: true
     }
 ];
