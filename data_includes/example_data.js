@@ -1,4 +1,4 @@
-var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", rshuffle("s1", "s2", "f"))), sepWith("sep", rshuffle("q1", "q2")), "end");
+var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", rshuffle("s1", "s2", "f"))), sepWith("sep", rshuffle("q1", "q2")), "sr", "end");
 var practiceItemTypes = ["practice"];
 
 var defaults  = [
@@ -21,6 +21,9 @@ var defaults  = [
         hideProgressBar: false,
         continueOnReturn: true ,
         saveReactionTime: true
+    },
+	"__SendResults__", {
+        manualSendResults: true
     }
 ];
 
@@ -70,6 +73,8 @@ var items  = [
             age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
     } ],
+	
+	["sr", "__SendResults__", { }],
 
     //
     // Three practice items for self-paced reading (one with a comprehension question).
