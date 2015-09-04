@@ -1,4 +1,4 @@
-var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", rshuffle("s1", "s2", "f"))), sepWith("sep", rshuffle("q1", "q2")));
+var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", rshuffle("s1", "s2", "f"))), sepWith("sep", rshuffle("q1", "q2")), "end");
 var practiceItemTypes = ["practice"];
 
 var defaults  = [
@@ -218,4 +218,11 @@ var items  = [
                                   "answer 2 to filler question 10",
                                   "answer 3 to filler question 10"]}]
 ];
+
+["end", "Form", {
+        html: { include: "end.html" },
+        validators: {
+            age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
+        }
+    } ],
 
