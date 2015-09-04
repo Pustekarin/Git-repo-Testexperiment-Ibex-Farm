@@ -21,7 +21,7 @@ var defaults  = [
         hideProgressBar: false,
         continueOnReturn: true ,
         saveReactionTime: true
-    }
+    },
 	"__SendResults__", {
         manualSendResults: true
     }
