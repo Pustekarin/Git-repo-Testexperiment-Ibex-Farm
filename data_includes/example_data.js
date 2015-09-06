@@ -68,8 +68,7 @@ var items  = [
     } ],
 	
 	["end", "Form", {
-        html: { include: "end.html" },
-        }
+        html: { include: "end.html" }
     } ],
 	
 	["sr", "__SendResults__", { }],
