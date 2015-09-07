@@ -10,6 +10,10 @@ jqueryWidget: {
         this.utils = this.options._utils;
 
         this.html = dget(this.options, "html");
+        this.showLink = dget(this.options, "showLink");
+		if (typeof this.showLink == "undefined") {
+			this.showLink = 1;	
+		}
         this.continueOnReturn = dget(this.options, "continueOnReturn", false);
         this.continueMessage = dget(this.options, "continueMessage", "Click here to continue");
         this.checkedValue = dget(this.options, "checkedValue", "yes");
@@ -160,7 +164,7 @@ jqueryWidget: {
 
         this.element.append(dom);
 
-        if (this.continueMessage) {
+        if (this.showLink==1 && this.continueMessage) {
             this.element.append($("<p>").append($("<a>").attr('href', '').text("\u2192 " + this.continueMessage)
                                                 .addClass(ibex_controller_name_to_css_prefix("Message") + "continue-link")
                                                 .click(handler)));

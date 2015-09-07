@@ -69,6 +69,7 @@ var items  = [
 	
 	["end", "Form", {
         html: { include: "end.html" },
+		showLink: 0,
         validators: {
             age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
