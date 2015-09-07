@@ -64,7 +64,8 @@ var items  = [
         html: { include: "demographics.html" },
 		jump: 0,
         validators: {
-            age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
+            age: function (s) { if (s.match(/^\d{2}$/)) return true; else return "Bad value for \u2018age\u2019"; }
+            //age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
     } ],
 	
