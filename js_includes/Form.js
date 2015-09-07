@@ -14,6 +14,10 @@ jqueryWidget: {
 		if (typeof this.showLink == "undefined") {
 			this.showLink = 1;	
 		}
+        this.jump = dget(this.options, "jump");
+		if (typeof this.jump == "undefined") {
+			this.jump = 1;	
+		}
         this.continueOnReturn = dget(this.options, "continueOnReturn", false);
         this.continueMessage = dget(this.options, "continueMessage", "Click here to continue");
         this.checkedValue = dget(this.options, "checkedValue", "yes");
@@ -171,6 +175,9 @@ jqueryWidget: {
         }
 
         this.creationTime = new Date().getTime();
+		if (this.jump==0) {
+			location.href = 'top';
+		}
     }
 },
 

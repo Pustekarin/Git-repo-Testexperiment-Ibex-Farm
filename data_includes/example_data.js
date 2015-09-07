@@ -62,6 +62,7 @@ var items  = [
 
     ["demographics", "Form", {
         html: { include: "demographics.html" },
+		jump: 0,
         validators: {
             age: function (s) { if (s.match(/^\d+$/)) return true; else return "Bad value for \u2018age\u2019"; }
         }
@@ -96,7 +97,7 @@ var items  = [
 
     [["s1",1], "DashedSentence", {s: "Item 1, condition 1"},
                "Question",       {q: "Question item 1", as: ["answer 1 to item 1", "answer 2 to item 1", "answer 3 to item 1"]}],
-    [["s2",1], "DashedSentence", {s: "Item 1, condition 2"},
+    /*[["s2",1], "DashedSentence", {s: "Item 1, condition 2"},
                "Question",       {q: "Question item 1", as: ["answer 1 to item 1", "answer 2 to item 1", "answer 3 to item 1"]}],
 
     // The first question will be chosen if the first sentence from the previous two items is chosen;
@@ -175,7 +176,7 @@ var items  = [
     [["s2",10], "DashedSentence", {s: "Item 10, condition 2"},
                "Question",       {q: "Question item 10", as: ["answer 1 to item 10",
                                                                       "answer 2 to item 10",
-                                                                      "answer 3 to item 10"]}],
+                                                                      "answer 3 to item 10"]}],*/
 
    
 
@@ -186,7 +187,7 @@ var items  = [
     ["f", "DashedSentence", {s: "This is filler sentence 1."},
           "Question",       {q: "Question filler 1:", as: ["answer 1 to filler question 1", "answer 2 to filler question 1", "answer 3 to filler question 1"]}],
 
-    ["f", "DashedSentence", {s: "This is filler sentence 2."},
+    /*["f", "DashedSentence", {s: "This is filler sentence 2."},
           "Question",       {q: "Question filler 2:",
                              as: ["answer 1 to filler question 2",
                                   "answer 2 to filler question 2",
@@ -230,4 +231,5 @@ var items  = [
                              as: ["answer 1 to filler question 10",
                                   "answer 2 to filler question 10",
                                   "answer 3 to filler question 10"]}]
+								  */
 	];
