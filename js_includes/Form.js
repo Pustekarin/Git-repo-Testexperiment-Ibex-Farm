@@ -176,7 +176,7 @@ jqueryWidget: {
 
         this.creationTime = new Date().getTime();
 		if (this.jump==0) {
-			location.href = 'top';
+			$(window).scrollTop(0);
 		}
     }
 },
