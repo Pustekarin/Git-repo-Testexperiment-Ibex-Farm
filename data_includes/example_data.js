@@ -86,9 +86,9 @@ var items  = [
     ["practice", "DashedSentence", {s: "This is another practice sentence with a practice question following it."},
                  "Question", {hasCorrect: false , randomOrder: false,
                               q: "How would you like to answer this question?",
-                              as: ["Press 1 or click here for this answer.",
-                                   "Press 2 or click here for this answer.",
-                                   "Press 3 or click here for this answer."]}],
+                              as: ["Press 1 for this answer.",
+                                   "Press 2 for this answer.",
+                                   "Press 3 for this answer."]}],
     ["practice", "DashedSentence", {s: "This is the last practice sentence before the experiment begins."}],
 
     //
