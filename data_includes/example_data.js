@@ -363,7 +363,7 @@ var items  = [
                                   "answer 2 to filler question 8",
                                   "answer 3 to filler question 8"]}],
 
-    ["f", "DashedSentence", {s: "This is filler sentence 9 and apparently it has no question."}],
+    ["f", "DashedSentence", {s: "This is filler sentence 9 and apparently it has no question."},
 		  "Question",       {q: "Question filler 10",
                              as: ["answer 1 to filler question 10",
                                   "answer 2 to filler question 10",
@@ -393,7 +393,7 @@ var items  = [
                                   "answer 2 to filler question 8",
                                   "answer 3 to filler question 8"]}],
 
-    ["f", "DashedSentence", {s: "This is filler sentence 9 and apparently it has no question."}],
+    ["f", "DashedSentence", {s: "This is filler sentence 9 and apparently it has no question."},
 		  "Question",       {q: "Question filler 10",
                              as: ["answer 1 to filler question 10",
                                   "answer 2 to filler question 10",
