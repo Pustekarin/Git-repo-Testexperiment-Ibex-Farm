@@ -316,9 +316,12 @@ var items  = [
     //
 
     ["f", "DashedSentence", {s: "This is filler sentence 1."},
-          "Question",       {q: "Question filler 1:", as: ["answer 1 to filler question 1", "answer 2 to filler question 1", "answer 3 to filler question 1"]}],
+          "Question",       {q: "Question filler 1:", 
+							as: ["answer 1 to filler question 1", 
+								"answer 2 to filler question 1", 
+								"answer 3 to filler question 1"]}],
 
-    /*["f", "DashedSentence", {s: "This is filler sentence 2."},
+    ["f", "DashedSentence", {s: "This is filler sentence 2."},
           "Question",       {q: "Question filler 2:",
                              as: ["answer 1 to filler question 2",
                                   "answer 2 to filler question 2",
@@ -332,10 +335,15 @@ var items  = [
 
     ["f", "DashedSentence", {s: "This is filler sentence 4."},
           "Question",       {q: "Question filler 4",
-                             as: ["answer 1 to filler question 4", "answer 2 to filler question 4", "answer 3 to filler question 4"]}],
+                             as: ["answer 1 to filler question 4", 
+								"answer 2 to filler question 4", 
+								"answer 3 to filler question 4"]}],
 
     ["f", "DashedSentence", {s: "This is filler sentence 5."},
-          "Question",       {q: "Question filler 5", as: ["answer 1 to filler question 5", "answer 2 to filler question 5", "answer 3 to filler question 5"]}],
+          "Question",       {q: "Question filler 5", 
+							as: ["answer 1 to filler question 5", 
+								"answer 2 to filler question 5", 
+								"answer 3 to filler question 5"]}],
 
     ["f", "DashedSentence", {s: "This is filler sentence 6."},
           "Question",       {q: "Question filler 6",
@@ -356,11 +364,44 @@ var items  = [
                                   "answer 3 to filler question 8"]}],
 
     ["f", "DashedSentence", {s: "This is filler sentence 9 and apparently it has no question."}],
+		  "Question",       {q: "Question filler 10",
+                             as: ["answer 1 to filler question 10",
+                                  "answer 2 to filler question 10",
+                                  "answer 3 to filler question 10"]}],
+
+    ["f", "DashedSentence", {s: "This is filler sentence 10."},
+          "Question",       {q: "Question filler 10",
+                             as: ["answer 1 to filler question 10",
+                                  "answer 2 to filler question 10",
+                                  "answer 3 to filler question 10"]}],
+
+	["f", "DashedSentence", {s: "This is filler sentence 6."},
+          "Question",       {q: "Question filler 6",
+                             as: ["answer 1 to filler question 6",
+                                  "answer 2 to filler question 6",
+                                  "answer 3 to filler question 6"]}],
+
+    ["f", "DashedSentence", {s: "This is filler sentence 7."},
+          "Question",       {q: "Question filler 7",
+                             as: ["answer 1 to filler question 7",
+                                  "answer 2 to filler question 7",
+                                  "answer 3 to filler question 7"]}],
+
+    ["f", "DashedSentence", {s: "This is filler sentence 8."},
+          "Question",       {q: "Question filler 8",
+                             as: ["answer 1 to filler question 8",
+                                  "answer 2 to filler question 8",
+                                  "answer 3 to filler question 8"]}],
+
+    ["f", "DashedSentence", {s: "This is filler sentence 9 and apparently it has no question."}],
+		  "Question",       {q: "Question filler 10",
+                             as: ["answer 1 to filler question 10",
+                                  "answer 2 to filler question 10",
+                                  "answer 3 to filler question 10"]}],
 
     ["f", "DashedSentence", {s: "This is filler sentence 10."},
           "Question",       {q: "Question filler 10",
                              as: ["answer 1 to filler question 10",
                                   "answer 2 to filler question 10",
                                   "answer 3 to filler question 10"]}]
-								  */
 	];
