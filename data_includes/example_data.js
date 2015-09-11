@@ -1,7 +1,7 @@
 var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", rshuffle("s1", "s2", "f"))), sepWith("sep", rshuffle("q1", "q2")), "sr", "end");
 var practiceItemTypes = ["practice"];
 
-var practiceItemMessage = "PRESS SPACE BAR";
+var practiceItemMessage = ["PRESS SPACE BAR"];
 
 var defaults  = [
     "Separator", {
