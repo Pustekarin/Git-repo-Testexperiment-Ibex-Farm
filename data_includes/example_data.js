@@ -10,7 +10,7 @@ var defaults  = [
     "DashedSentence", {
         mode: "self-paced reading",
     },
-	"practice", {
+	"practiceItemTypes", {
 		practiceItemMessage: "PRESS SPACE BAR"
 	},
     "Question", {
