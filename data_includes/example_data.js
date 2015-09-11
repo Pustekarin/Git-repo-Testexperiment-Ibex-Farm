@@ -20,6 +20,7 @@ var defaults  = [
     },
     "Form", {
         hideProgressBar: false,
+		countsForProgressBar: true,
         continueOnReturn: true ,
         saveReactionTime: true
     },
