@@ -12,9 +12,6 @@ var defaults  = [
     "DashedSentence", {
         mode: "self-paced reading",
     },
-	/*"practiceItemTypes", {
-		practiceItemMessage: "PRESS SPACE BAR"
-	},*/
     "Question", {
         hasCorrect: true 
     },
