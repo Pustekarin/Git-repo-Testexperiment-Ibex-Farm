@@ -9,9 +9,10 @@ var defaults  = [
     },
     "DashedSentence", {
         mode: "self-paced reading",
-		practiceItemMessage: "PRESS SPACE BAR"
     },
-    
+	"practice", {
+		practiceItemMessage: "PRESS SPACE BAR"
+	},
     "Question", {
         hasCorrect: true 
     },
