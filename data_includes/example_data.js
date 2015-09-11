@@ -1,6 +1,8 @@
 var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", rshuffle("s1", "s2", "f"))), sepWith("sep", rshuffle("q1", "q2")), "sr", "end");
 var practiceItemTypes = ["practice"];
 
+var practiceItemMessage = "PRESS SPACE BAR"
+
 var defaults  = [
     "Separator", {
         transfer: "keypress",
@@ -10,11 +12,10 @@ var defaults  = [
     "DashedSentence", {
         mode: "self-paced reading",
     },
-	"practiceItemTypes", {
-		practiceItemMessage: "PRESS SPACE BAR",
-	},
+	/*"practiceItemTypes", {
+		practiceItemMessage: "PRESS SPACE BAR"
+	},*/
     "Question", {
-		
         hasCorrect: true 
     },
     "Message", {
