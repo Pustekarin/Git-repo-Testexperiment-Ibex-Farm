@@ -11,9 +11,10 @@ var defaults  = [
         mode: "self-paced reading",
     },
 	"practiceItemTypes", {
-		practiceItemMessage: "PRESS SPACE BAR"
+		practiceItemMessage: "PRESS SPACE BAR",
 	},
     "Question", {
+		
         hasCorrect: true 
     },
     "Message", {
