@@ -15,6 +15,7 @@ li.normal-answer {
 }
 li:hover.normal-answer {
     cursor: pointer;
+	pointer-events: none;
 }
 li.scale-box {
     float: left;
@@ -28,6 +29,7 @@ li.scale-box {
     height: 2em;
     padding-top: 0.5em;
     text-align: center;
+	pointer-events: none;
 }
 .scale-comment-box {
     float: left;
@@ -39,22 +41,27 @@ li.scale-box {
     padding-top: 0.5em;
     text-align: center;
     font-style: italic;
+	pointer-events: none;
 }
 li.scale-box a {
     text-decoration: none; 
     display: block;
     vertical-align: middle;
+	pointer-events: none;
 }
 li.scale-box a:hover {
     text-decoration: none;
     display: block;
     vertical-align: middle;
+	pointer-events: none;
 }
 span.fake-link {
     color: black;
     cursor: pointer;
+	pointer-events: none;
 }
 span:hover.fake-link {
     cursor: pointer;
+	pointer-events: none;
 }
 
