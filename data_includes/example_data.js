@@ -96,7 +96,7 @@ var items  = [
           "Question",       {q: "What did the builder do?",
                              as: ["Check the electricity.",
                                   "Turn off the electricity.",
-                                  "Install the electricity."]}]
+                                  "Install the electricity."]}],
 
     [["s1",1], "DashedSentence", {s: "The bank rejected the customer without letting her know why."},
                "Question",       {q: "What did the bank do?", 
