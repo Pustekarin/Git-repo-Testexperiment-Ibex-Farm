@@ -1,8 +1,6 @@
-var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", "rshuffle("s1", "s2", "f"))), sepWith("sep", rshuffle("q1", "q2")), "sr", "end");
+var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", "first", rshuffle("s1", "s2", "f"))), sepWith("sep", rshuffle("q1", "q2")), "sr", "end");
 var practiceItemTypes = ["practice"];
-
 var practiceMessage = "PRESS SPACE BAR";
-
 var defaults  = [
     "Separator", {
         transfer: "keypress",
@@ -28,9 +26,7 @@ var defaults  = [
         manualSendResults: true
     }
 ];
-
 var items  = [
-
     // New in Ibex 0.3-beta-9. You can now add a '__SendResults__' controller in your shuffle
     // sequence to send results before the experiment has finished. This is NOT intended to allow
     // for incremental sending of results -- you should send results exactly once per experiment.
@@ -40,9 +36,7 @@ var items  = [
     // otherwise, results are automatically sent at the end of the experiment.
     //
     //["sr", "__SendResults__", { }],
-
     ["sep", "Separator", { }],
-
     // New in Ibex 0.3-beta19. You can now determine the point in the experiment at which the counter
     // for latin square designs will be updated. (Previously, this was always updated upon completion
     // of the experiment.) To do this, insert the special '__SetCounter__' controller at the desired
@@ -51,14 +45,11 @@ var items  = [
     // the counter is set to the given number. (E.g., { set: 100 }, { inc: -1 })
     //
     //["setcounter", "__SetCounter__", { }],
-
     //  NOTE: You could also use the 'Message' controller for the experiment intro (this provides a simple
     // consent checkbox).
-
     ["intro", "Form", {
         html: { include: "example_intro.html" },
     } ],
-
     ["demographics", "Form", {
         html: { include: "demographics.html" },
 		jump: 0,
@@ -74,7 +65,6 @@ var items  = [
     } ],
 	
 	["sr", "__SendResults__", { }],
-
     //
     // Three practice items for self-paced reading (one with a comprehension question).
     //
@@ -86,18 +76,16 @@ var items  = [
                                    "Press 2 for this answer.",
                                    "Press 3 for this answer."]}],
     ["practice", "DashedSentence", {s: "This is the last practice sentence before the experiment begins."}],
-
     //
     // Two "real" (i.e. non-filler) self-paced reading items with corresponding acceptability judgment items.
     // There are two conditions.
     //
 	
-	/*["first", "DashedSentence", {s: "The builder tested the electricity by turning it on and off."},
+	["first", "DashedSentence", {s: "The builder tested the electricity by turning it on and off."},
           "Question",       {q: "What did the builder do?",
                              as: ["Check the electricity.",
                                   "Turn off the electricity.",
-                                  "Install the electricity."]}],*/
-
+                                  "Install the electricity."]}],
     [["s1",1], "DashedSentence", {s: "The bank rejected the customer without letting her know why."},
                "Question",       {q: "What did the bank do?", 
 									as: ["Reject the customer.", 
@@ -108,10 +96,8 @@ var items  = [
 									as: ["Reject the customer.", 
 										"Let the customer know about the rejection.", 
 										"Inform the customer."]}],
-
     // The first question will be chosen if the first sentence from the previous two items is chosen;
     // the second question will be chosen if the second sentence from the previous pair of items is chosen.
-
     [["s1",2], "DashedSentence", {s: "The song comforted the child by getting her to sleep."},
                "Question",       {q: "What effect did the song have on the child?",
                                   as: ["The child fell asleep.",
@@ -130,7 +116,6 @@ var items  = [
 										"Firefighters."]}],
     [["s2",3], "DashedSentence", {s: "The dogs rescued the human by dragging him out of the fire."},
                "Question",       {q: "By whom was the person rescued?", as: ["Dogs.", "Police.", "Firefighters."]}],
-
     [["s1",4], "DashedSentence", {s: "The hospital saved the infant by keeping her in an incubator."},
                "Question",       {q: "How was the infant saved?",
                                   as: ["By keeping the infant in an incubator.",
@@ -163,7 +148,6 @@ var items  = [
 									as: ["The tourist paid for something without knowing about it.", 
 									"The tourist didn’t have an agency.", 
 									"The tourist couldn’t contact the agency."]}],
-
     [["s1",7], "DashedSentence", {s: "The club expelled the member without giving her the notice."},
                "Question",       {q: "What did the club do?",
                                   as: ["Expel the member.",
@@ -196,7 +180,6 @@ var items  = [
 									as: ["Yes.", 
 										"No.", 
 										"Yes, but without the help of the dating agency."]}],
-
     [["s1",10], "DashedSentence", {s: "The service hotline helped the user by guiding her through the process."},
                "Question",       {q: "What did the user do?",
                                   as: ["Call a service hotline.",
@@ -318,80 +301,67 @@ var items  = [
                                          "To let the parent know that the trip was cancelled.",
                                          "To ask the parent to join the trip."]}],
 										 
-
     //
     // 10 self-paced-reading filler sentences.
     //
-
     ["f", "DashedSentence", {s: "The host entertained his guests by playing them a folk song."},
           "Question",       {q: "How did the host entertain the guests?", 
 							as: ["By playing a song.", 
 								"By singing them a song.", 
 								"By dancing to a folk song."]}],
-
     ["f", "DashedSentence", {s: "The teacher punished the students by giving them bad grades."},
           "Question",       {q: "What did the teacher do?",
                              as: ["He punished the students.",
                                   "He warned the students.",
                                   "He rewarded the students with good grades."]}],
-
     ["f", "DashedSentence", {s: "The children scared the pigeons by chasing them around the plaza."},
           "Question",       {q: "What did the children do?",
                              as: ["Scare the pigeons.",
                                   "Feed the pigeons.",
                                   "Watch the pigeons at the plaza."]}],
-
     ["f", "DashedSentence", {s: "The boy lost the scissors before using them even once."},
           "Question",       {q: "How often did the boy use the scissors?",
                              as: ["He never used them.", 
 								"He used them once.", 
 								"Many times."]}],
-
     ["f", "DashedSentence", {s: "The government lowered the taxes after raising them hadn’t helped."},
           "Question",       {q: "Did raising the taxes have the desired effect?", 
 							as: ["No.", 
 								"Yes.", 
 								"To some extent."]}],
-
     ["f", "DashedSentence", {s: "The party won the elections by manipulating them heavily."},
           "Question",       {q: "Who manipulated the elections?",
                              as: ["The party.",
                                   "The government.",
                                   "The dictator."]}],
-
     ["f", "DashedSentence", {s: "The owner trained the dog by rewarding it after every command."},
           "Question",       {q: "Who taught the dog commands?",
                              as: ["The owner.",
                                   "A dog trainer.",
                                   "The boy."]}],
-
     ["f", "DashedSentence", {s: "The firefighter saved the cat by rescuing it from the tree."},
           "Question",       {q: "How was the cat saved?",
                              as: ["By a firefighter.",
                                   "It jumped from the tree.",
                                   "It was rescued by the owner."]}],
-
     ["f", "DashedSentence", {s: "The veterinary released the horse by putting it to sleep."},
 		  "Question",       {q: "What animal did the veterinary put to sleep?",
                              as: ["A horse.",
                                   "A dog.",
                                   "A cat."]}],
-
     ["f", "DashedSentence", {s: "The immigrant learnt the language by using it every day."},
           "Question",       {q: "How did the immigrant learn the language?",
                              as: ["By using it on a daily basis.",
                                   "By studying really hard.",
                                   "By taking private classes."]}],
-
 	["f", "DashedSentence", {s: "The boy handed in his essay without checking it for errors."},
           "Question",       {q: "Who checked the essay before it was handed in?",
                              as: ["No one.",
                                   "The boy.",
-                                  "The parents."]}],
-
+                                  "The parents."]}]/*,
     ["f", "DashedSentence", {s: "The builder tested the electricity by turning it on and off."},
           "Question",       {q: "What did the builder do?",
                              as: ["Check the electricity.",
                                   "Turn off the electricity.",
-                                  "Install the electricity."]}]
-	];
+                                  "Install the electricity."]}]*/
+	]
