@@ -1,4 +1,4 @@
-var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", "first", "rshuffle("s1", "s2", "f"))), sepWith("sep", rshuffle("q1", "q2")), "sr", "end");
+var shuffleSequence = seq("intro", "demographics", sepWith("sep", seq("practice", "rshuffle("s1", "s2", "f"))), sepWith("sep", rshuffle("q1", "q2")), "sr", "end");
 var practiceItemTypes = ["practice"];
 
 var practiceMessage = "PRESS SPACE BAR";
@@ -92,11 +92,11 @@ var items  = [
     // There are two conditions.
     //
 	
-	["first", "DashedSentence", {s: "The builder tested the electricity by turning it on and off."},
+	/*["first", "DashedSentence", {s: "The builder tested the electricity by turning it on and off."},
           "Question",       {q: "What did the builder do?",
                              as: ["Check the electricity.",
                                   "Turn off the electricity.",
-                                  "Install the electricity."]}],
+                                  "Install the electricity."]}],*/
 
     [["s1",1], "DashedSentence", {s: "The bank rejected the customer without letting her know why."},
                "Question",       {q: "What did the bank do?", 
