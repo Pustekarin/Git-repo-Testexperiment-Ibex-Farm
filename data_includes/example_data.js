@@ -387,11 +387,11 @@ var items  = [
           "Question",       {q: "Who checked the essay before it was handed in?",
                              as: ["No one.",
                                   "The boy.",
-                                  "The parents."]}]/*,
+                                  "The parents."]}],
 
     ["f", "DashedSentence", {s: "The builder tested the electricity by turning it on and off."},
           "Question",       {q: "What did the builder do?",
                              as: ["Check the electricity.",
                                   "Turn off the electricity.",
-                                  "Install the electricity."]}]*/
+                                  "Install the electricity."]}]
 	];
