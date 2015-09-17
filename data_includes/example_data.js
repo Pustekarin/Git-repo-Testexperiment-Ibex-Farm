@@ -319,9 +319,9 @@ var items  = [
 								
     ["f", "DashedSentence", {s: "The teacher punished the students by giving them bad grades."},
           "Question",       {q: "What did the teacher do?",
-                             as: ["He punished the students.",
-                                  "He warned the students.",
-                                  "He rewarded the students with good grades."]}],
+                             as: ["The teacher punished the students.",
+                                  "The teacher warned the students.",
+                                  "The teacher rewarded the students with good grades."]}],
 								  
     ["f", "DashedSentence", {s: "The children scared the pigeons by chasing them around the plaza."},
           "Question",       {q: "What did the children do?",
